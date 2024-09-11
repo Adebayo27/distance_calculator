@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image-container{
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        #image{
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .point{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            pointer-events: none;
+            border-radius: 50%;
+            display: none;
+        }
+
+        #container{
+            width: 700px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        #pixel-coord{
+            margin: 10px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Distance calculator</h2>
+
+    <input type="file" id="image-input" accept="image/*">
+    <div id="pixel-coord"></div>
+    <div id="container">
+        <div id="image-container">
+            <img id="image" src="" alt="">
+            
+        </div>
+    </div>
+    <div id="point1" class="point"></div>
+    <div id="point2" class="point"></div>
+    
+    <script src="https://unpkg.com/konva@9.3.15/konva.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
