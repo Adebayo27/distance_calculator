@@ -58,8 +58,8 @@ container.addEventListener("click", function (event) {
 });
 
 function positionPoints(point, x, y) {
-  point.style.left = `${x}px`;
-  point.style.top = `${y}px`;
+  point.style.left = `${x -5}px`;
+  point.style.top = `${y - 5}px`;
   point.style.display = `block`;
 }
 
